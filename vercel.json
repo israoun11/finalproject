@@ -1,15 +1,8 @@
 {
-  "version": 2,
-  "builds": [
+  "rewrites": [
     {
-      "src": "server.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "server.js"
+      "source": "/user/:path*",
+      "destination": "https://finalproject-wdk1.vercel.app/user/:path*"
     }
   ]
 }
